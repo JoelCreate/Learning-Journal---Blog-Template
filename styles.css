@@ -26,6 +26,22 @@ a {
     margin-left: -3em;
 }
 
+.h1 {
+    font-size: 2em;
+    text-transform: capitalize;
+    margin: 10px auto;
+}
+
+.p {
+    line-height: 1.5;
+    height: 6em;
+    overflow: hidden;
+}
+
+/*****************
+    Navigation
+*****************/
+
 nav {
     padding: 10px 20px;
     height: 4em;
@@ -49,4 +65,19 @@ nav li {
     background-size: cover;
     width: 2em;
     height: 2em;
+}
+
+/**********************
+    Featured Post
+**********************/
+
+#featured-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    color: #f7f7f9;
+    background: url('https://images.unsplash.com/photo-1572666341285-c8cb9790ca50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
+    background-size: cover;
+    height: 40vh;
 }

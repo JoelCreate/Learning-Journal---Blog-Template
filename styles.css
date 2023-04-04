@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-    width: 100%;
     padding: 0px;
     margin: 0px;
 }
@@ -88,10 +87,27 @@ nav li {
 **********************/
 #blog-section {
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1em;
 }
 
 #img-1 {
     background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+}
+
+#img-2 {
+    background: url('https://images.unsplash.com/photo-1554921027-b91f0beeb07d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80') no-repeat center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+}
+
+#img-3 {
+    background: url('https://images.unsplash.com/photo-1611427579146-5a418d32f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80') no-repeat center;
     background-size: cover;
     height: 20vh;
     width: 100%;

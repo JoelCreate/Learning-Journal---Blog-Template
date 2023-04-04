@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
@@ -80,16 +81,18 @@ nav li {
     background: url('https://images.unsplash.com/photo-1572666341285-c8cb9790ca50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
     background-size: cover;
     height: 40vh;
-    margin-bottom: 1em;
 }
 
 /**********************
     Blog Post
 **********************/
+#blog-section {
+    padding: 20px;
+}
 
 #img-1 {
     background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
-    background-size: center;
+    background-size: cover;
     height: 20vh;
-    width: 100vw;
+    width: 100%;
 }

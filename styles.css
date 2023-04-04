@@ -2,10 +2,13 @@
 
 *{
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
     background: #f7f7f9;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -17,13 +20,28 @@ a {
     color: #0a0a09;
 }
 
+.logo-font{
+    display: block;
+    font-size: .85em;
+    margin-left: -3em;
+}
+
 nav {
+    padding: 10px 20px;
+    height: 4em;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+}
+
+nav li {
+    margin: 0px 10px;
+    font-weight: 600;
 }
 
 #logo {

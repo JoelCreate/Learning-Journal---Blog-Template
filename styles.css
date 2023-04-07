@@ -79,6 +79,11 @@ nav li {
     height: 2em;
 }
 
+#about-btn:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
 /**********************
     Featured Post
 **********************/
@@ -149,7 +154,7 @@ nav li {
 /**********************
     About Section
 **********************/
-.about-section {
+#about {
     display: none;
 }
 

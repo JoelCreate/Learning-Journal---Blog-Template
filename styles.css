@@ -165,7 +165,6 @@ nav li {
 #about {
     display: none;
     padding: 45px 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }

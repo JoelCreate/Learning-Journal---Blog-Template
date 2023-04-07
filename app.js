@@ -11,12 +11,12 @@ const aboutBtn = document.getElementById("about-btn")
 
 
 aboutBtn.addEventListener("click", function(){
-    if (aboutSection.style.display === "block") {
+    if (aboutSection.style.display === "flex") {
         aboutSection.style.display = "none"
         blogSection.style.display = "grid"
         featuredPost.style.display = "block"
     } else {
-        aboutSection.style.display = "block"
+        aboutSection.style.display = "flex"
         blogSection.style.display = "none"
         featuredPost.style.display = "none"
     }

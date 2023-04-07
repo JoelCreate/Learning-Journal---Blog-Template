@@ -96,7 +96,7 @@ nav li {
 /**********************
     Blog Post
 **********************/
-#blog-section {
+.blog-section {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -120,11 +120,11 @@ nav li {
 }
 
 #img-2 {
-    background: url('https://images.unsplash.com/photo-1554921027-b91f0beeb07d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1491802259623-5468d0e0d7ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80') no-repeat center;
 }
 
 #img-3 {
-    background: url('https://images.unsplash.com/photo-1611427579146-5a418d32f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1611427579146-5a418d32f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80') no-repeat bottom;
 }
 
 #img-4 {
@@ -132,11 +132,11 @@ nav li {
 }
 
 #img-5 {
-    background: url('https://plus.unsplash.com/premium_photo-1678564741870-d68a69925537?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1566647387313-9fda80664848?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2265&q=80') no-repeat center;
 }
 
 #img-6 {
-    background: url('https://images.unsplash.com/photo-1566647387313-9fda80664848?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2265&q=80') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
 }
 
 #view-more {
@@ -170,22 +170,29 @@ nav li {
 
     .logo-font {
         position: absolute;
-        left: 8svw;
+        left: 8vw;
         font-weight: 800;
     }
 
     #featured-post {
         height: 65vh;
-        display: block;
         font-size: 1.5em;
-        padding-left: 2em;
     }
-    .date{
-        margin-top: 23%;
+
+    .featured-wrapper {
+        max-width: 65vw;
+        padding: 30px;
     }
 
     .p {
-        max-width: 60vw;
+        line-height: 1.5em;
+        height: 4.5em;
+    }
+
+    .blog-section {
+        max-width: 90vw;
+        margin: 2em auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
 }

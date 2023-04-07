@@ -41,7 +41,7 @@ span {
     margin: 20px auto;
 }
 
-h3 {
+#about-more h3 {
     margin: 20px auto;
 }
 
@@ -127,6 +127,7 @@ nav li {
 .blog-post {
     display: grid;
     gap: .5em;
+    margin-top: 2em;
 }
 
 .blog-img {

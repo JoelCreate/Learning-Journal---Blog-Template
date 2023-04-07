@@ -32,7 +32,15 @@ span {
 .h1 {
     font-size: 2em;
     text-transform: capitalize;
-    margin: 10px auto;
+    margin: 20px auto;
+}
+
+h3 {
+    margin: 20px auto;
+}
+
+.about-p {
+    margin-bottom: 20px;
 }
 
 .p {
@@ -156,6 +164,18 @@ nav li {
 **********************/
 #about {
     display: none;
+    padding: 45px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-img {
+    background: url('../imgs/me.jpg') no-repeat center;
+    background-size: cover;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
 }
 
 /**********************
@@ -203,11 +223,20 @@ nav li {
         height: 4.5em;
     }
 
-    .blog-section,
-    #recent-blogs {
+    .page-wrapper {
         max-width: 90vw;
         margin: 2em auto;
+    }
+
+    .blog-section,
+    #recent-blogs {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
+    #about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

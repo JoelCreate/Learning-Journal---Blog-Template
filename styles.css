@@ -88,7 +88,7 @@ nav li {
     justify-content: flex-end;
     padding: 10px 20px;
     color: #f7f7f9;
-    background: url('https://images.unsplash.com/photo-1572666341285-c8cb9790ca50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1611262588019-db6cc2032da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80s') no-repeat center;
     background-size: cover;
     height: 40vh;
 }
@@ -109,9 +109,9 @@ nav li {
 }
 
 .blog-img {
-    background-size: contain;
-    height: 25vh;
-    width: 100%;
+    background-size: cover !important;
+    height: 30vh;
+    width: auto;
     border-radius: 5px;
 }
 
@@ -157,4 +157,35 @@ nav li {
     height: 15vh;
     text-align: center;
     margin-top: 1em;
+}
+
+
+/**********************
+    Media Queries
+**********************/
+@media (min-width: 760px) {
+    nav {
+        font-size: 1.5em;
+    }
+
+    .logo-font {
+        position: absolute;
+        left: 8svw;
+        font-weight: 800;
+    }
+
+    #featured-post {
+        height: 65vh;
+        display: block;
+        font-size: 1.5em;
+        padding-left: 2em;
+    }
+    .date{
+        margin-top: 23%;
+    }
+
+    .p {
+        max-width: 60vw;
+    }
+    
 }

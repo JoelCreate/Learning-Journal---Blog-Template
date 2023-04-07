@@ -14,7 +14,7 @@ aboutBtn.addEventListener("click", function(){
     if (aboutSection.style.display === "flex") {
         aboutSection.style.display = "none"
         blogSection.style.display = "grid"
-        featuredPost.style.display = "block"
+        featuredPost.style.display = "flex"
     } else {
         aboutSection.style.display = "flex"
         blogSection.style.display = "none"

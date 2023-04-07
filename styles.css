@@ -10,6 +10,12 @@ body{
     background: #f7f7f9;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    padding-bottom: 15vh;
 }
 
 /*****************
@@ -172,15 +178,19 @@ nav li {
 #about-img {
     background: url('../imgs/me.jpg') no-repeat center;
     background-size: cover;
-    width: 10em;
-    height: 10em;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    margin-right: 5em;
 }
 
 /**********************
     Footer
 **********************/
 #blog-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: #0a0a09;
     color: #fff;
     display: flex;
@@ -224,7 +234,7 @@ nav li {
 
     .page-wrapper {
         max-width: 90vw;
-        margin: 2em auto;
+        margin: 2em auto 0 auto;
     }
 
     .blog-section,
@@ -232,10 +242,9 @@ nav li {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    #about-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #about {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
 }

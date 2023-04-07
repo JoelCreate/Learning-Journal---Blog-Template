@@ -59,6 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #fff;
 }
 
 nav ul{
@@ -96,7 +97,8 @@ nav li {
 /**********************
     Blog Post
 **********************/
-.blog-section {
+.blog-section,
+#recent-blogs {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -145,6 +147,13 @@ nav li {
 }
 
 /**********************
+    About Section
+**********************/
+.about-section {
+    display: none;
+}
+
+/**********************
     Footer
 **********************/
 #blog-footer {
@@ -189,7 +198,8 @@ nav li {
         height: 4.5em;
     }
 
-    .blog-section {
+    .blog-section,
+    #recent-blogs {
         max-width: 90vw;
         margin: 2em auto;
         grid-template-columns: 1fr 1fr 1fr;

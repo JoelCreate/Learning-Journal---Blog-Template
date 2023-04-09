@@ -7,8 +7,6 @@ const aboutSection = document.getElementById("about")
 const aboutBtn = document.getElementById("about-btn")
 
 
-//recentBlogs.innerHTML += blogSection.innerHTML
-
 
 aboutBtn.addEventListener("click", function(){
     if (aboutSection.style.display === "flex") {

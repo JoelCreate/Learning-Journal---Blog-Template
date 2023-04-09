@@ -41,8 +41,9 @@ span {
     margin: 20px auto;
 }
 
-#about-more h3 {
-    margin: 20px auto;
+.h3 {
+    margin: 20px 0;
+    text-align: left;
 }
 
 .about-p {
@@ -82,7 +83,7 @@ nav ul{
 }
 
 nav li {
-    margin: 0px 10px;
+    margin: 0px 15px;
     font-weight: 600;
 }
 
@@ -93,9 +94,16 @@ nav li {
     height: 2em;
 }
 
-#about-btn:hover {
+#about-btn:hover, 
+#home-btn:hover {
     cursor: pointer;
     opacity: .5;
+}
+
+.blog-link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.025);
 }
 
 /**********************
@@ -167,6 +175,19 @@ nav li {
 }
 
 /**********************
+    Single Blog Post
+**********************/
+.single-post {
+    max-width: 90vw;
+    margin: 5em auto;
+}
+
+.single-post .blog-img {
+    height: 60vh;
+}
+
+
+/**********************
     About Section
 **********************/
 #about {
@@ -208,7 +229,7 @@ nav li {
     Media Queries
 **********************/
 @media (min-width: 760px) {
-    nav {
+    nav, .single-post {
         font-size: 1.5em;
     }
 
@@ -228,9 +249,13 @@ nav li {
         padding: 30px;
     }
 
-    .p {
+    #featured-post .p {
         line-height: 1.5em;
         height: 4.5em;
+    }
+
+    .p {
+        height: auto;
     }
 
     .page-wrapper {

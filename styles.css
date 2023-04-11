@@ -64,6 +64,10 @@ span {
     font-weight: 400;
 }
 
+ol li {
+    margin: auto 20px;
+}
+
 /*****************
     Navigation
 *****************/
@@ -145,6 +149,10 @@ nav li {
     border-radius: 5px;
 }
 
+#img-feature{
+    background: url('https://images.unsplash.com/photo-1611262588019-db6cc2032da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80s') no-repeat center;
+}
+
 #img-1 {
     background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center;
 }
@@ -183,7 +191,15 @@ nav li {
 }
 
 .single-post .blog-img {
-    height: 60vh;
+    height: 40vh;
+}
+
+.single-post .strong {
+    margin-bottom: 10px;
+}
+
+.single-post p {
+    margin: 10px auto;
 }
 
 
@@ -228,7 +244,7 @@ nav li {
 /**********************
     Media Queries
 **********************/
-@media (min-width: 760px) {
+@media (min-width: 550px) {
     nav, .single-post {
         font-size: 1.5em;
     }
@@ -271,6 +287,10 @@ nav li {
     #about {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .single-post .blog-img {
+        height: 60vh;
     }
 
 }

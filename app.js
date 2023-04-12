@@ -1,23 +1,40 @@
+//const featuredPost = document.getElementById("featured-post")
 
-const featuredPost = document.getElementById("featured-post")
+const recentBlogs = document.querySelector("#recent-blogs")
 
-const recentBlogs = document.getElementById("recent-blogs")
+const blogArray = [
+   {
+      id: 0,
+      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      date: "July 27, 2022",
+      title: "Hello World",
+      description: "Coding is the process of creating instructions for a computer to follow, enabling it to perform tasks and solve problems."  
+   },
+   {
+      id: 1,
+      image: "https://images.unsplash.com/photo-1491802259623-5468d0e0d7ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80",
+      date: "July 26, 2022",
+      title: "How It All Began",
+      description: "I began coding by taking the front end developer course on Scrimba and became fascinated with the ability to create software and solve complex problems."
 
-const blogArray = []
-const blogSection = document.getElementsByClassName("blog-section")
+   },
+   {
+      id: 2,
+      image: "https://images.unsplash.com/photo-1611427579146-5a418d32f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+      date: "July 25, 2022",
+      title: "Why I Learnesd To Code",
+      description: "I learned to code because I was interested in the problem-solving aspect of it, and wanted to be able to create and build things using technology."
+   } 
+]
 
+function renderRecentBlogs () {
+    
+    blogArray.forEach(function(blog){
+        const blogPost =  document.createElement('div')
+        blogPost.id = blog.id
+    })
 
-
-for ( let i = 0; i < blogSection.childNodes; i++ ) {
-    blogArray.push(blogSection.childNodes[i])
-   
 }
-
-// recentBlogs.innerHTML = blogArray.innerHTML
-
-// blogSection.forEach((blog) => {
-//     console.log(blog.id)
-// })
 
 
 

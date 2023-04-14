@@ -215,14 +215,9 @@ nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3em;
 }
 
-/* .recent-blogs {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr 1fr 1fr));
-    gap: 1em; 
-} */
 
 /**********************
     About Section
@@ -300,11 +295,15 @@ nav li {
     }
 
     .blog-img {
-        width: auto;
+        width: 100%;
+        object-fit: cover;
     }
 
     .blog-section{
-        grid-template-columns: 1fr 1fr 1fr;
+        width: 90vw;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 1em;
     }
     
     #about {
@@ -314,6 +313,11 @@ nav li {
 
     .single-post .blog-img {
         height: 60vh;
+    }
+
+    #recent-blogs {
+        width: 90vw;
+        gap: 3em;
     }
 
 }

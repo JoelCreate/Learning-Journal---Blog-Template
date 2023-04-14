@@ -25,16 +25,13 @@ const blogArray = [
       date: "July 25, 2022",
       title: "Why I Learned To Code",
       description: "I learned to code because I was interested in the problem-solving aspect of it, and wanted to be able to create and build things using technology.",
-      href: "../blogs/post2.html"
+      href: "../blogs/post3.html"
    } 
 ]
 
 function renderRecentBlogs () {
     
     blogArray.forEach(function(blog){
-      //   const blogLink = document.createElement('a')
-      //   blogLink.classList.add('blog-link')
-      //   blogLink.href = blog.href
 
         const blogPost =  document.createElement('a')
         blogPost.id = blog.id
@@ -53,20 +50,13 @@ function renderRecentBlogs () {
 
         const recentBlogDescription = document.createElement('p')
         recentBlogDescription.textContent = blog.description
-
-    
-      //   blogLink.setAttribute('href', blog.link)
-
         
         blogPost.append(recentBlogImage)  
         blogPost.append(recentBlogDate)  
         blogPost.append(recentBlogTitle) 
-        blogPost.append(recentBlogDescription) 
-         
+        blogPost.append(recentBlogDescription)          
         
-        recentBlogs.append(blogPost)
-        
-        
+        recentBlogs.append(blogPost)    
 
     })
 

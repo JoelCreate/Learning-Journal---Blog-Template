@@ -42,7 +42,6 @@ span {
 }
 
 .h3 {
-    margin: 20px 0;
     text-align: left;
 }
 
@@ -138,6 +137,7 @@ nav li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1em;
+    margin-bottom: 3em;
 }
 
 .blog-post {
@@ -147,7 +147,7 @@ nav li {
 }
 
 .blog-img {
-    background-size: cover !important; 
+    object-fit: cover;
     height: 30vh;
     width: 90vw;
     border-radius: 5px;
@@ -215,7 +215,6 @@ nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3em;
 }
 
 
@@ -296,7 +295,6 @@ nav li {
 
     .blog-img {
         width: 100%;
-        object-fit: cover;
     }
 
     .blog-section{

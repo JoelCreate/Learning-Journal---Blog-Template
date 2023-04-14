@@ -22,7 +22,7 @@ const blogArray = [
       id: 2,
       image: "https://images.unsplash.com/photo-1611427579146-5a418d32f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
       date: "July 25, 2022",
-      title: "Why I Learnesd To Code",
+      title: "Why I Learned To Code",
       description: "I learned to code because I was interested in the problem-solving aspect of it, and wanted to be able to create and build things using technology."
    } 
 ]
@@ -32,10 +32,35 @@ function renderRecentBlogs () {
     blogArray.forEach(function(blog){
         const blogPost =  document.createElement('div')
         blogPost.id = blog.id
+        blogPost.classList.add('recent-blogs')
+
+        const recentBlogDate = document.createElement('p')
+        recentBlogDate.textContent = blog.date
+
+        const recentBlogTitle = document.createElement('h3')
+        recentBlogTitle.textContent = blog.title
+
+        const recentBlogImage = document.createElement('img')
+        recentBlogImage.classList.add('blog-img')
+        recentBlogImage.setAttribute('src', blog.image)
+
+        const recentBlogDescription = document.createElement('p')
+        recentBlogDescription.textContent = blog.description
+
+        recentBlogs.append(blogPost)
+        blogPost.append(recentBlogImage)  
+        blogPost.append(recentBlogDate)  
+        blogPost.append(recentBlogTitle) 
+        blogPost.append(recentBlogDescription)  
+        
+        
+        
+
     })
 
 }
 
+renderRecentBlogs()
 
 
 

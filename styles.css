@@ -217,6 +217,9 @@ nav li {
     align-items: center;
 }
 
+#recent-blogs .blog-img {
+    object-fit: cover;
+}
 
 /**********************
     About Section

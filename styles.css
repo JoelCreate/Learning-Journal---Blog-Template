@@ -45,6 +45,11 @@ span {
     text-align: left;
 }
 
+#about-more .h3 {
+    margin: 1em auto;
+}
+
+
 .about-p {
     margin-bottom: 20px;
 }

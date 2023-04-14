@@ -147,9 +147,9 @@ nav li {
 }
 
 .blog-img {
-    background-size: cover !important;
+    background-size: cover !important; 
     height: 30vh;
-    width: auto;
+    width: 90vw;
     border-radius: 5px;
     animation: fadeIn;
     animation-duration: 1s;
@@ -217,12 +217,12 @@ nav li {
     align-items: center;
 }
 
-.recent-blogs {
+/* .recent-blogs {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr 1fr 1fr));
     gap: 1em; 
-}
+} */
 
 /**********************
     About Section
@@ -299,8 +299,11 @@ nav li {
         margin: 2em auto 0 auto;
     }
 
-    .blog-section,
-    #recent-blogs {
+    .blog-img {
+        width: auto;
+    }
+
+    .blog-section{
         grid-template-columns: 1fr 1fr 1fr;
     }
     

@@ -94,7 +94,7 @@ nav li {
 
 #logo {
     background: url('../imgs/logo.svg') no-repeat center;
-    background-size: cover;
+    background-size: contain;
     width: 2em;
     height: 2em;
 }
@@ -198,6 +198,7 @@ nav li {
 
 .single-post .blog-img {
     height: 40vh;
+    margin: 1em auto 2em auto;
 }
 
 .single-post .strong {

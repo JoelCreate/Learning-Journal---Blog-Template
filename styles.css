@@ -288,6 +288,10 @@ nav li {
         height: auto;
     }
 
+    p {
+        line-height: 1.5;
+    }
+
     .page-wrapper {
         max-width: 90vw;
         margin: 2em auto 0 auto;
@@ -295,13 +299,21 @@ nav li {
 
     .blog-img {
         width: 100%;
+        background-size: cover !important;
+    }
+
+    .large-img {
+        width: 100%;
+        height: 80vh !important;
+        background-size: cover !important;
+        margin: 1em auto;
     }
 
     .blog-section{
-        width: 90vw;
+       width: 90vw;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
-       gap: 1em;
+       gap: 2em;
     }
     
     #about {
